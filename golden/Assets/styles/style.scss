@@ -7,6 +7,7 @@ serif;
 $darker-gray: #777777;
 $lighter-gray: #f1f1f1;
 $yellow: #fed136;
+$yellow-darker: #e8b400;
 $gray-bg: #f7f7f7;
 $gray-input: #bbbbbb;
 $sm: 768px;
@@ -26,8 +27,10 @@ h4 {
     font-size: 1.1em;
     display: inline-block;
     cursor: pointer;
-    &:hover {
+    transition: background 0.3s ease-in-out;
+    &:hover, &:active {
         text-decoration: none;
+        background: $yellow-darker;
     }
 }
 
@@ -39,15 +42,28 @@ h4 {
 .navbar-custom {
     background-color: transparent;
     border: none;
+    margin-bottom: 0;
+    min-height: 70px;
     a {
         text-transform: uppercase;
+        font-family: $montserrat;
+        &:after {
+            display: block;
+            content: '';
+            border-bottom: 2px solid $yellow;
+            transform: scaleX(0);
+            transition: all .25s ease-in-out;
+        }
+        &:hover:after {
+            transform: scaleX(1);
+        }
     }
 }
 
 .home {
     padding: 4em 0;
     @media (min-width: 768px) {
-        padding: 21em 0;
+        padding: 22em 0;
     }
 }
 
@@ -374,9 +390,9 @@ h4 {
 /* Override bootstrap navbar styling  */
 
 $bgDefault: transparent;
-$bgHighlight: #ffdd69;
+$bgHighlight: $yellow;
 $colDefault: #fff;
-$colHighlight: #ffdd69;
+$colHighlight: $yellow;
 .navbar-default {
     background-color: $bgDefault;
     border-color: $bgHighlight;

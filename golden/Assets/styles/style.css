@@ -9,9 +9,11 @@ h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
   display: inline-block;
-  cursor: pointer; }
-  .yellow-button:hover, .home-content .home-button:hover, .contact-us-container .contact-us-button:hover {
-    text-decoration: none; }
+  cursor: pointer;
+  transition: background 0.3s ease-in-out; }
+  .yellow-button:hover, .home-content .home-button:hover, .contact-us-container .contact-us-button:hover, .yellow-button:active, .home-content .home-button:active, .contact-us-container .contact-us-button:active {
+    text-decoration: none;
+    background: #e8b400; }
 
 .first-section-wrapper {
   background: url("../images/home-bg.jpg") no-repeat;
@@ -19,15 +21,26 @@ h4 {
 
 .navbar-custom {
   background-color: transparent;
-  border: none; }
+  border: none;
+  margin-bottom: 0;
+  min-height: 70px; }
   .navbar-custom a {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif; }
+    .navbar-custom a:after {
+      display: block;
+      content: '';
+      border-bottom: 2px solid #fed136;
+      transform: scaleX(0);
+      transition: all .25s ease-in-out; }
+    .navbar-custom a:hover:after {
+      transform: scaleX(1); }
 
 .home {
   padding: 4em 0; }
   @media (min-width: 768px) {
     .home {
-      padding: 21em 0; } }
+      padding: 22em 0; } }
 
 .home-content {
   color: white;
@@ -287,32 +300,32 @@ h4 {
 /* Override bootstrap navbar styling  */
 .navbar-default {
   background-color: transparent;
-  border-color: #ffdd69; }
+  border-color: #fed136; }
   .navbar-default .navbar-brand {
     color: #fff; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: #ffdd69; }
+      color: #fed136; }
   .navbar-default .navbar-text {
     color: #fff; }
   .navbar-default .navbar-nav > li > a {
     color: #fff; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-      color: #ffdd69; }
+      color: #fed136; }
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover,
   .navbar-default .navbar-nav > .active > a:focus {
-    color: #ffdd69;
-    background-color: #ffdd69; }
+    color: #fed136;
+    background-color: #fed136; }
   .navbar-default .navbar-nav > .open > a,
   .navbar-default .navbar-nav > .open > a:hover,
   .navbar-default .navbar-nav > .open > a:focus {
-    color: #ffdd69;
-    background-color: #ffdd69; }
+    color: #fed136;
+    background-color: #fed136; }
   .navbar-default .navbar-toggle {
-    border-color: #ffdd69;
+    border-color: #fed136;
     margin-bottom: 15px; }
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-      background-color: #ffdd69; }
+      background-color: #fed136; }
     .navbar-default .navbar-toggle .icon-bar {
       background-color: #fff; }
   .navbar-default .navbar-collapse,
@@ -321,17 +334,17 @@ h4 {
   .navbar-default .navbar-link {
     color: #fff; }
     .navbar-default .navbar-link:hover {
-      color: #ffdd69; }
+      color: #fed136; }
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #fff; }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-      color: #ffdd69; }
+      color: #fed136; }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #ffdd69;
-    background-color: #ffdd69; } }
+    color: #fed136;
+    background-color: #fed136; } }
 
 /*# sourceMappingURL=style.css.map */
