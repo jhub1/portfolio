@@ -84,15 +84,20 @@ h4 {
   padding: 6em 0; }
   .portfolio-container .portfolio {
     margin-top: 3em; }
-    .portfolio-container .portfolio img {
+    .portfolio-container .portfolio .portfolio-item {
       padding-bottom: 7em;
-      margin-bottom: 1em;
       background: white;
       height: 400px;
-      width: 300px; }
+      width: 300px;
+      margin-bottom: 3em;
+      cursor: pointer;
+      -webkit-transition: margin .25s ease-in-out;
+      transition: margin .25s ease-in-out; }
+      .portfolio-container .portfolio .portfolio-item:hover {
+        margin-top: -1em; }
     .portfolio-container .portfolio .name-description {
       position: absolute;
-      bottom: 2em;
+      bottom: 4em;
       left: 25%;
       right: 25%; }
       .portfolio-container .portfolio .name-description .name {

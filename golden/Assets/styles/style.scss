@@ -28,7 +28,8 @@ h4 {
     display: inline-block;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
-    &:hover, &:active {
+    &:hover,
+    &:active {
         text-decoration: none;
         background: $yellow-darker;
     }
@@ -121,16 +122,22 @@ h4 {
     padding: 6em 0;
     .portfolio {
         margin-top: 3em;
-        img {
+        .portfolio-item {
             padding-bottom: 7em;
-            margin-bottom: 1em;
             background: white;
             height: 400px;
             width: 300px;
+            margin-bottom: 3em;
+            cursor: pointer;
+            -webkit-transition: margin .25s ease-in-out;
+            transition: margin .25s ease-in-out;
+            &:hover {
+                margin-top: -1em;
+            }
         }
         .name-description {
             position: absolute;
-            bottom: 2em;
+            bottom: 4em;
             left: 25%;
             right: 25%;
             .name {
