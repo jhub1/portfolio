@@ -29,22 +29,13 @@ $(function() {
         }
     });
 
-    $(window).scroll(function() {
+    $(window).on("load resize scroll", function() {
         // get all elements to animate
-        var elem = $('.emerge, .from-left, .from-right');
+        var elem = $('.emerge');
         $.each(elem, function(i, el) {
-            // console.log(el);
             var el = $(el);
             if (el.visible(true)) {
-                // setTimeout(function() {
-                if (el.hasClass('emerge')) {
-                    el.addClass('animated fadeInUp');
-                } else if (el.hasClass('from-left')) {
-                    el.addClass('animated fadeInLeft');
-                } else if (el.hasClass('from-right')) {
-                    el.addClass('animated fadeInRight');
-                }
-                // }, i * 200);
+                el.addClass('animated fadeInUp');
             }
         });
     });

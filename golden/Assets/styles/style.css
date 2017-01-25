@@ -302,6 +302,16 @@ h4 {
 .google-f:hover {
   background: url("../images/google-color.png"); }
 
+/* Animations */
+.emerge:nth-child(1) {
+  animation-delay: 0.2s; }
+.emerge:nth-child(2) {
+  animation-delay: 0.4s; }
+.emerge:nth-child(3) {
+  animation-delay: 0.6s; }
+.emerge:nth-child(4) {
+  animation-delay: 0.8s; }
+
 /* Override bootstrap navbar styling  */
 .navbar-default {
   background-color: transparent;
