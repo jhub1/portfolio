@@ -123,7 +123,7 @@ h4 {
       .about-us-container .about-us .even .about-us-desc {
         font-family: "Roboto Slab", serif;
         color: #777777; }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         .about-us-container .about-us .odd .timeline-text,
         .about-us-container .about-us .even .timeline-text {
           float: right;

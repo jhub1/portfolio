@@ -169,7 +169,7 @@ h4 {
                 color: $darker-gray;
             }
             .timeline-text {
-                @media (max-width: $sm) {
+                @media (max-width: $sm - 1px) {
                     float: right;
                     width: -webkit-calc(100% - 240px);
                 }
