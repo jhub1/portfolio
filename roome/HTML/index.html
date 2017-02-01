@@ -9,6 +9,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../Assets/styles/animate.css">
     <link href="../Assets/styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Assets/plugins/fancybox/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
     <script src="https://use.typekit.net/vil7fgc.js"></script>
     <script>
     try {
@@ -38,8 +39,15 @@
             <div class="row">
                 <div class="col-xs-7 col-xs-offset-1 col-sm-6 subheading">Launching soon on <img src="../Assets/images/indiegogo-logo.png" alt="Indiegogo Logo"></div>
             </div>
+            <!-- hide preregister button on smaller devices -->
+            <div class="hidden-xs row pre-register-button-row">
+                <a href="#" class="col-xs-offset-1 pre-register2">Pre-register</a>
+            </div>
+        </div>
+        <!-- show preregister button on smaller devices -->
+        <div class="container hidden-sm hidden-md hidden-lg">
             <div class="row">
-                <a href="#" class="col-sm-offset-1 pre-register2">Pre-register</a>
+                <a href="#" class="col-xs-10 col-xs-offset-1 pre-register2 mt1 text-center">Pre-register</a>
             </div>
         </div>
     </section>
@@ -69,7 +77,8 @@
     </section>
     <section class="container fourth-section">
         <div class="row features">
-            <div class="col-md-4 text-right left-column">
+            <!-- Hide this on small devices -->
+            <div class="hidden-xs hidden-sm col-sm-6 col-md-4 text-right left-column">
                 <div class="row feature-row">
                     <div class="col-md-7 feature-description">dimmable 150 lumen</div>
                     <div class="col-md-5">
@@ -89,10 +98,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 text-center">
+            <div class="hidden-xs hidden-sm col-md-4 text-center">
                 <img src="../Assets/images/roome-image.png" alt="Roome Image"></a>
             </div>
-            <div class="col-md-4 text-left right-column">
+            <div class="hidden-xs hidden-sm col-sm-6 col-md-4 text-left right-column">
                 <div class="row feature-row">
                     <div class="col-md-5">
                         <img class="feature-image" src="../Assets/images/app.jpg" alt="Presence Detection"></a>
@@ -101,16 +110,52 @@
                 </div>
                 <div class="row feature-row">
                     <div class="col-md-5">
-                        <img class="feature-image" src="../Assets/images/smart.jpg" alt="Presence Detection"></a>
+                        <img class="feature-image" src="../Assets/images/smart.jpg" alt="Presence Detection">
                     </div>
                     <div class="col-md-7 feature-description">Smart Learning</div>
                 </div>
                 <div class="row feature-row">
                     <div class="col-md-5">
-                        <img class="feature-image" src="../Assets/images/detect.jpg" alt="Presence Detection"></a>
+                        <img class="feature-image" src="../Assets/images/detect.jpg" alt="Presence Detection">
                     </div>
                     <div class="col-md-7 feature-description">Presence Detection</div>
                 </div>
+            </div>
+            <!-- Show this on small devices -->
+            <div class="hidden-md hidden-lg col-xs-12">
+                <div class="row feature-row">
+                    <div class="col-xs-6 text-center">
+                        <img class="feature-image" src="../Assets/images/dim.jpg" alt="Presence Detection">
+                        <div class="feature-description">dimmable 150 lumen</div>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                        <img class="feature-image" src="../Assets/images/comfort.jpg" alt="Presence Detection">
+                        <div class="feature-description">comfortable led light</div>
+                    </div>
+                </div>
+                <div class="row feature-row">
+                    <div class="col-xs-6 text-center">
+                        <img class="feature-image" src="../Assets/images/micro.jpg" alt="Presence Detection">
+                        <div class="feature-description">micro usb charging</div>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                        <img class="feature-image" src="../Assets/images/app.jpg" alt="Presence Detection"></a>
+                        <div class="feature-description">app control</div>
+                    </div>
+                </div>
+                <div class="row feature-row">
+                    <div class="col-xs-6 text-center">
+                        <img class="feature-image" src="../Assets/images/smart.jpg" alt="Presence Detection">
+                        <div class="feature-description">Smart Learning</div>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                        <img class="feature-image" src="../Assets/images/detect.jpg" alt="Presence Detection">
+                        <div class="feature-description">Presence Detection</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-md hidden-lg col-xs-12 text-center">
+                <img src="../Assets/images/roome-image.png" alt="Roome Image"></a>
             </div>
         </div>
         <div class="row buttons-row text-center">
@@ -122,24 +167,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-4 usage">
-                    <img class="img-responsive" src="../Assets/images/usage-1.jpg" alt="Roome Image"></a>
+                    <a class="fancybox" rel="group" href="../Assets/images/usage-1.jpg"><img class="img-responsive" src="../Assets/images/usage-1.jpg" alt="Roome Image"></a>
                 </div>
                 <div class="col-xs-4 usage">
-                    <img class="img-responsive" src="../Assets/images/usage-2.jpg" alt="Roome Image"></a>
+                    <a class="fancybox" rel="group" href="../Assets/images/usage-2.jpg"><img class="img-responsive" src="../Assets/images/usage-2.jpg" alt="Roome Image"></a>
                 </div>
                 <div class="col-xs-4 usage">
-                    <img class="img-responsive" src="../Assets/images/usage-3.jpg" alt="Roome Image"></a>
+                    <a class="fancybox" rel="group" href="../Assets/images/usage-3.jpg"><img class="img-responsive" src="../Assets/images/usage-3.jpg" alt="Roome Image"></a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-4 usage">
-                    <img class="img-responsive" src="../Assets/images/usage-4.jpg" alt="Roome Image"></a>
+                    <a class="fancybox" rel="group" href="../Assets/images/usage-4.jpg"><img class="img-responsive" src="../Assets/images/usage-4.jpg" alt="Roome Image"></a>
                 </div>
                 <div class="col-xs-4 usage">
-                    <img class="img-responsive" src="../Assets/images/usage-5.jpg" alt="Roome Image"></a>
+                    <a class="fancybox" rel="group" href="../Assets/images/usage-5.jpg"><img class="img-responsive" src="../Assets/images/usage-5.jpg" alt="Roome Image"></a>
                 </div>
                 <div class="col-xs-4 usage">
-                    <img class="img-responsive" src="../Assets/images/usage-6.jpg" alt="Roome Image"></a>
+                    <a class="fancybox" rel="group" href="../Assets/images/usage-6.jpg"><img class="img-responsive" src="../Assets/images/usage-6.jpg" alt="Roome Image"></a>
                 </div>
             </div>
         </div>
@@ -156,7 +201,7 @@
                             <input type="email" class="form-control input-lg" id="inputEmail" placeholder="Email Address">
                         </div>
                     </div>
-                    <a href="#" class="btn btn-lg col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1  col-md-2 col-md-offset-0 subscribe-button">subscribe</a>
+                    <a href="#" class="btn btn-lg col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1 col-md-2 col-md-offset-0 subscribe-button">subscribe</a>
                 </div>
             </div>
         </div>
@@ -165,19 +210,20 @@
         <div class="jumbotron">
             <div class="container footer-container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-md-4 footer-logo">
+                    <div class="col-xs-12 col-sm-6 footer-logo">
                         <img src="../Assets/images/logo-blue.png" alt="Roome Logo">
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-sm-offset-4 col-md-4 share-logos">
-                        <a href="#"><img src="../Assets/images/twitter.png" alt="Roome Logo"></a>
-                        <a href="#"><img src="../Assets/images/facebook.png" alt="Roome Logo"></a>
-                        <a href="#"><img src="../Assets/images/instagram.png" alt="Roome Logo"></a>
+                    <div class="col-xs-12 col-sm-6 share-logos">
+                        <a href="#"><img src="../Assets/images/twitter.png" alt="Twitter Logo"></a>
+                        <a href="#"><img src="../Assets/images/facebook.png" alt="Facebook Logo"></a>
+                        <a href="#"><img src="../Assets/images/instagram.png" alt="Instagram Logo"></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../Assets/plugins/fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="../Assets/js/index.js"></script>
 </body>
