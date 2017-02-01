@@ -1,0 +1,308 @@
+$light-blue: #75d8f4;
+$dark-blue: #00b8f1;
+$light-gray: #e6e6e6;
+$dark-gray: #9a9a9a;
+$white: #fff;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$azo-font: azo-sans-web,
+sans-serif;
+* {
+    font-family: $azo-font;
+}
+
+.first-section {
+    min-height: 650px;
+    .jumbotron {
+        margin-bottom: 0;
+        min-height: 650px;
+        background: $dark-blue;
+        background: -webkit-linear-gradient(left bottom, $dark-blue, $light-blue);
+        background: -o-linear-gradient(top right, $dark-blue, $light-blue);
+        background: -moz-linear-gradient(top right, $dark-blue, $light-blue);
+        background: linear-gradient(to top right, $dark-blue, $light-blue);
+        .pre-register {
+            @extend .default-button;
+            padding: 0;
+            color: $white;
+            background: #65c1db;
+            font-size: 30px;
+            border: 2px solid $white;
+            &:hover {
+                background: $dark-blue;
+            }
+        }
+    }
+    .pre-register-image-container {
+        background: url('../images/roome-img-1.jpg') no-repeat;
+        background-size: 100%;
+        @media (max-width: $sm) {
+            width: 90%;
+        }
+        @media (min-width: $lg) {
+            background-size: cover;
+            min-height: 710px;
+        }
+        margin-top: -500px;
+        -moz-box-shadow: 0 0 50px 5px #ececec;
+        -webkit-box-shadow: 0 0 50px 5px #ececec;
+        box-shadow: 0px 0px 50px 5px #ececec;
+        .heading {
+            font-family: $azo-font;
+            font-style: normal;
+            font-weight: 200;
+            color: $white;
+            font-size: 7vw;
+            text-shadow: 2px 2px 15px #000;
+            padding-top: 0.5em;
+            @media (min-width: $sm) {
+                font-size: 4em;
+                padding-top: 0.5em;
+            }
+            @media (min-width: $lg) {
+                padding-top: 3.5em;
+                font-size: 5em;
+            }
+        }
+        .subheading {
+            font-family: $azo-font;
+            font-style: normal;
+            font-weight: 400;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            color: $white;
+            line-height: 3em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 2vw;
+            @media (min-width: $sm) {
+                font-size: 1.5em;
+            }
+            img {
+                margin-top: -10px;
+            }
+        }
+        .pre-register2 {
+            @extend .default-button;
+            color: $white;
+            background: $dark-blue;
+            border: 2px solid $white;
+            font-size: 22px;
+            padding: 8px 34px;
+            margin-bottom: 1em;
+            &:hover {
+                background: $dark-blue;
+            }
+            @media (min-width: $md) {
+                margin-bottom: 2em;
+            }
+        }
+    }
+}
+
+.second-section {
+    .video-container {
+        padding: 4em 0 4em;
+        @media (min-width: $sm) {
+            // padding: 4em 0;
+        }
+        @media (min-width: $md) {
+            padding: 6em 0;
+        }
+    }
+}
+
+.third-section {
+    .jumbotron {
+        padding: 0;
+        background: $dark-gray;
+        background: -webkit-linear-gradient(left bottom, $dark-gray, $light-gray);
+        background: -o-linear-gradient(top right, $dark-gray, $light-gray);
+        background: -moz-linear-gradient(top right, $dark-gray, $light-gray);
+        background: linear-gradient(to top right, $dark-gray, $light-gray);
+    }
+    .roome-image {
+        img {
+            margin: 0 auto;
+        }
+        text-align: center;
+        @media screen and (min-width: $md) {
+            text-align: left;
+        }
+    }
+    .description {
+        h1,
+        p {
+            font-family: $azo-font;
+            font-style: normal;
+            font-weight: 400;
+            text-align: center;
+            @media screen and (min-width: $md) {
+                text-align: left;
+            }
+        }
+        h1 {
+            font-size: 3.2em;
+            padding: 3em 0 1em;
+        }
+        p {
+            font-size: 1.7em;
+            @media screen and (max-width: $md) {
+                padding-bottom: 3em;
+            }
+        }
+    }
+}
+
+.fourth-section {
+    .features {
+        padding-top: 8em;
+        padding-bottom: 8em;
+        .feature-row {
+            padding: 2.5em 0;
+            .feature-description {
+                font-family: $azo-font;
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 1.8em;
+                padding-top: 1.3em;
+                letter-spacing: 2px;
+            }
+            .feature-image {
+                height: 130px;
+                width: 130px;
+            }
+        }
+    }
+    .left-column {
+        padding-right: 0;
+    }
+    .right-column {
+        padding-left: 0;
+    }
+    .buttons-row {
+        .more-info {
+            @extend .default-button;
+            color: $dark-blue;
+            background: $white;
+            border: 2px solid $dark-blue;
+            margin-right: 10px;
+            margin-bottom: 1em;
+            &:hover {
+                background: $dark-blue;
+                color: $white;
+            }
+        }
+        .pre-register {
+            @extend .default-button;
+            color: $white;
+            background: $dark-blue;
+            border: 2px solid $white;
+            &:hover {
+                background: $dark-blue;
+            }
+        }
+    }
+}
+
+.fifth-section {
+    padding-top: 8em;
+    padding-bottom: 8em;
+    .usage {
+        padding-bottom: 1em;
+        padding-right: 0;
+        @media screen and (min-width: $md) {
+            padding-bottom: 2em;
+            padding-right: 15px;
+        }
+    }
+}
+
+.sixth-section {
+    .jumbotron {
+        margin-bottom: 0;
+        min-height: 350px;
+        background: $dark-blue;
+        background: -webkit-linear-gradient(left bottom, $dark-blue, $light-blue);
+        background: -o-linear-gradient(top right, $dark-blue, $light-blue);
+        background: -moz-linear-gradient(top right, $dark-blue, $light-blue);
+        background: linear-gradient(to top right, $dark-blue, $light-blue);
+        .subscribe-container {
+            text-align: center;
+            @media screen and (min-width: $sm) {
+                text-align: left;
+            }
+        }
+        .subscribe-heading {
+            color: white;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            font-size: 1.5em;
+            @media screen and (min-width: $sm) {
+                font-size: 2.5em;
+            }
+        }
+        .email-input {
+            @media screen and (max-width: $md) {
+                padding: 0;
+            }
+        }
+        .input-lg {
+            height: 60px;
+        }
+        .subscribe-button {
+            @extend .default-button;
+            background: #2d7fe4;
+            color: $white;
+            height: 60px;
+        }
+    }
+}
+
+.seventh-section {
+    .jumbotron {
+        margin-bottom: 0;
+        background-color: #f0f0f0;
+        @media screen and (max-width: $sm) {
+            text-align: center;
+        }
+        .footer-container {
+            padding-top: 2em;
+            padding-bottom: 1em;
+        }
+        .share-logos {
+            img {
+                padding-right: 5px;
+            }
+        }
+        .footer-logo, .share-logos {
+        	padding-top: 2em;
+        	padding-bottom: 2em;
+        }
+    }
+}
+
+// Default button properties
+.default-button {
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-family: $azo-font;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 2;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+    &:active,
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+/* 
+    position: absolute;
+    bottom: 45%;
+    text-align: center;
+    width: 90% 
+    */
